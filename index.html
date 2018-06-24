@@ -3,22 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <title>memo</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="lib/swiper/swiper-4.3.3.min.css">
+    <link rel="stylesheet/less" type="text/css" href="style/style.less"/>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.0.2/less.min.js"></script>
 </head>
 <body>
-    <div class="web">
-        <header>
-            <a href="" class="logo"></a>
-            <nav>
-                <a href="">Home</a>
-                <a href="">Store</a>
-                <a href="">After Sale</a>
-                <a href="">Audio Us</a>
-                <a href="">Contact Us</a>
-                <a href="">Location</a>
-            </nav>
-        </header>
+<div class="web">
+    <header>
+        <a href="" class="logo"></a>
+        <nav>
+            <a class="active" href="javascript:;">Home</a>
+            <a href="javascript:;">Store</a>
+            <a href="javascript:;">After Sale</a>
+            <a href="javascript:;">Audio Us</a>
+            <a href="javascript:;">Contact Us</a>
+            <a href="javascript:;">Location</a>
+        </nav>
+    </header>
+</div>
+<div class="banner">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/index/b1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/index/b1.jpg" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div><!--左箭头-->
+        <div class="swiper-button-next"></div><!--右箭头-->
     </div>
+</div>
+<ul class="product-wrap clear">
+    <li>
+        <img src="images/index/p1.jpg">
+    </li>
+    <li>
+        <img src="images/index/p2.jpg">
+    </li>
+    <li>
+        <img src="images/index/p3.jpg">
+    </li>
+    <li>
+        <img src="images/index/p4.jpg">
+    </li>
+</ul>
+<div class="footer clear">
+    <div class="bottom-map clear">
+        <div class="map-item">
+            <div class="item-title">Product</div>
+            <a href="">RedMi2</a>
+            <a href="">RedMi2 Pro</a>
+            <a href="">Mi Band</a>
+            <a href="">Mi4i</a>
+        </div>
+        <div class="map-item">
+            <div class="item-title">Service</div>
+            <a href="">Online Store</a>
+            <a href="">Agency</a>
+        </div>
+        <div class="map-item">
+            <div class="item-title">About Us</div>
+            <a href="">Channel</a>
+            <a href="">Brand</a>
+        </div>
+        <div class="map-item">
+            <div class="item-title">Cooperation</div>
+            <a href="">Join Us</a>
+            <a href="">Consulting</a>
+        </div>
+    </div>
+    <div class="contact-info">
+        <div class="tel-num">400-000-000</div>
+        <div class="open-time">Mon to Sun 9:00-21:00</div>
+        <a class="tel" href="" class="online">Online Service</a>
+    </div>
+</div>
+<div class="copy">
+    <div class="copyright">www.memo.com 2011-2017 &copy; All Rights Reserved</div>
+</div>
 
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="lib/swiper/swiper-4.3.3.min.js"></script>
+<script>
+    $(function () {
+        var mySwiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        })
+    })
+</script>
 </body>
 </html>
