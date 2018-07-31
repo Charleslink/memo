@@ -17,6 +17,22 @@ a{
     clear: both;
 }
 
+//公共字体样式
+.font-p{
+    font-family: "MicrosoftYaHeiLight";
+    font-size: 16px;
+    color: #949494;
+}
+.need-oreage-circle::before{
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-image: url('../images/common/circle.png');
+    position: relative;
+    top: -4px;
+    left: -10px;
+}
 .web{
     width: 100%;
     min-width: 1300px;
@@ -96,6 +112,64 @@ header{
     }
 }
 
+.nav{
+    width: 1300px;
+    height: 108px;
+    margin: auto;
+    text-align: center;
+    nav{
+        float: left;
+        line-height: 108px;
+        text-align: center;
+        a{
+            display: inline-block;
+            line-height: 20px;
+            padding: 4px 15px;
+            margin-left: 58px;
+            color: #6b6b6b;
+            font-size: 16px;
+            &.active{
+                border-bottom: 3px solid red;
+            }
+        }
+    }
+}
+
+.pagenation{
+    text-align: center;
+    width: 800px;
+    margin: 50px 0 0 50px;
+    padding-bottom: 140px;
+    div{
+        display: inline-block;
+        width: 55px;
+        line-height: 55px;
+        text-align: center;
+        background: #e5e5e5;
+        cursor: pointer;
+    }
+    .no-click{
+        background: #ccc;
+    }
+    .more{
+        background: none;
+    }
+    .prev{
+        margin-right: 20px;
+    }
+    .next{
+        margin-left: 20px;
+    }
+}
+
+.line-end::after{
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background: #ccc;
+}
+
 .product-wrap{
     width: 100%;
     margin-bottom: 95px;
@@ -168,3 +242,380 @@ header{
         color: #b9b9b9;
     }
 }
+
+#aboutour{
+    .circle-list{
+        line-height: 55px;
+        text-align: center;
+    }
+    .company-pro{
+        width: 1300px;
+        margin: auto;
+        .title{
+            font-weight: 400;
+            font-size: 26px;
+            color: #131b23;
+            margin-top: 40px;
+            text-align: center;
+        }
+        p{
+            line-height: 30px;
+            width:631px;
+            margin: auto;
+        }
+    }
+    .partner-icon{
+        margin-top: 80px;
+        text-align: center;
+        img{
+            width: 1080px;
+        }
+    }
+    .turnover-pro{
+        width: 100%;
+        background: #f7f7f8;
+        margin-top: 45px;
+        text-align: center;
+        padding-bottom: 40px;
+        p{
+            width: 630px;
+            padding-left: 12px;
+        }
+        p:first-child{
+            margin-right: 40px;
+        }
+        p:last-child{
+            margin-left: 40px;
+        }
+        .title{
+            display: flex;
+            p{
+                font-size: 26px;
+                color: #131b23;
+                margin-top: 80px;
+                text-align: left;
+            }
+            p:first-child{
+                text-align: right;
+            }
+            span{
+                color: #e2611a;
+            }
+        }
+        .deta-pro{
+            display: flex;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            p{
+                font-size: 16px;
+                color: #949494;
+                text-align: left;
+                line-height: 40px;
+            }
+        }
+        
+    }
+    .team-pro{
+        width: 1300px;
+        margin: auto;
+        margin-bottom: 240px;
+        .title{
+            font-weight: 400;
+            font-size: 26px;
+            color: #131b23;
+            margin-top: 90px;
+            text-align: center;
+        }
+        .people-pro{
+            display: flex;
+            margin-top: 60px;
+            .img-show{
+                width: 210px;
+                img{
+                    width: 210px;
+                }
+            }
+            .all-pro{
+                margin-left: 30px;
+                line-height: 30px;
+                width: 348px;
+                .name{
+                    font-size: 20px;
+                    color: #131b23;
+                }
+                .posi{
+                    font-size: 16px;
+                    color: #131b23;
+                    margin-top: 20px;
+                }
+                .text-pro{
+                    margin-top: 20px;
+                    font-size: 14px;
+                    color: #949494;
+                }
+            }
+        }
+        .first{
+            .all-pro{
+                width: 1058px;
+            }
+        }
+        .no-first:nth-of-type(odd){
+            width: 680px;
+            float: left;
+        }
+        .no-first:nth-of-type(even){
+            width: 600px;
+        }
+    }
+}
+
+#news,#newdetail{
+    .content{
+        width: 100%;
+        background: #f3f4f7;
+        margin-bottom: 130px;
+    }
+    .news-list{
+        width: 1300px;
+        margin: auto;
+        position: relative;
+        .list{
+            width: 850px;
+            .news-cover{
+                width: 800px;
+                margin-left: 50px;
+                background: #fff;
+                padding: 0 39px;
+                box-sizing: border-box;
+                .title{
+                    line-height: 117px;
+                    font-size: 22px;
+                    color: #000;
+                }
+                .share{
+                    line-height: 40px;
+                    background: #f6f6f6;
+                    padding: 0 25px;
+                    .time-author{
+                        font-size: 12px;
+                        color: #000;
+                    }
+                    .icon{
+                        float: right;
+                        img{
+                            display: inline-block;
+                            width: 16px;
+                            height: 16px;
+                            background: red;
+                        }
+                        span{
+                            color: #cecece;
+                        }
+                    }
+                }
+                .image{
+                    margin-top: 30px;
+                    width: 728px;
+                }
+                .introdu{
+                    margin-top: 30px;
+                    font-size: 13px;
+                    line-height: 30px;
+                    color: #000;
+                }
+                .more{
+                    text-align: right;
+                    font-size: 18px;
+                    color: #e2611a;
+                    margin: 25px 0 15px 0;
+                    cursor: pointer;
+                }
+            }
+            .news-cover:last-child{
+                padding-bottom: 50px;
+            }
+        }
+        
+    }
+    .hot-news{
+        position: absolute;
+        width: 380px;
+        top: 0;
+        left: 870px;
+        background: #fff;
+        padding: 10px 30px;
+        box-sizing: border-box;
+        .title{
+            line-height: 75px;
+            font-size: 24px;
+            color: #000000;
+        }
+        .news-short{
+            line-height: 90px;
+            img{
+                width: 90px;
+                height: 90px;
+            }
+            p{
+                display: inline-block;
+                width: 195px;
+                margin-left: 30px;
+                line-height: 20px;
+                vertical-align: middle;
+                position: relative;
+                top: -45px;
+                font-size: 13px;   
+            }
+        }
+    }
+
+}
+
+#newdetail{
+    .content{
+        padding-bottom: 200px;
+        margin-bottom: 100px;
+    }
+    .detail{
+        width: 800px;
+        margin-left: 50px;
+        background: #fff;
+        padding: 20px 39px;
+        box-sizing: border-box;
+        img{
+            margin: 30px 0;
+        }
+        p{
+            font-size: 13px;
+        }
+    }
+    .share-img{
+        width: 800px;
+        margin-left: 50px;
+        background: #fff;
+        padding: 80px 0;
+        div{
+            width: 430px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+    }
+    .back{
+        width: 800px;
+        margin-left: 50px;
+        background: #fff;
+        padding-bottom: 50px;
+        cursor: pointer;
+        a{
+            margin-left: 39px;
+            color: #e2611a;
+            font-size: 13px;
+        }
+    }
+}
+
+#phonebrands,#morephone{
+    .show-icon{
+        margin-bottom: 85px;
+    }
+    .icon-phone{
+        width: 1300px;
+        margin: auto;
+        padding: 0 110px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        margin-top: 50px;
+        div{
+            width: 180px;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+    .brands-show{
+        width: 1300px;
+        box-sizing: border-box;
+        padding: 0 40px;
+        margin: auto;
+        margin-top: 55px;
+        .title{
+            .hot{
+                border-left: 4px solid #e2611a;
+                font-size: 24px;
+                line-height: 33px;
+                display: inline-block;
+                padding-left: 20px;
+            }
+            a{
+                float: right;
+                color: #e2611a;
+                font-size: 16px;
+                display: inline-block;
+                line-height: 33px;
+                text-align: center;
+            }
+        }
+    }
+    .phone-list{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 200px;
+        .phone-card{
+            width: 286px;
+            height: 356px;
+            background: #f6f6f6;
+            margin-top: 15px;
+            text-align: center;
+            cursor: pointer;
+            img{
+                margin-top: 65px;
+                width: 110px;
+                height: 130px;
+            }
+            .phone-pro{
+                margin-top: 45px;
+            }
+            .phone-price{
+                margin-top: 20px;
+                font-size: 16px;
+                .nowprice{
+                    color: #ec5b0b;
+                }
+            }
+        }
+        
+    }
+}
+
+#morephone{
+    .all-screen{
+        background: #f2f2f2;
+        padding-top: 30px;
+        padding-bottom: 60px;
+        margin-bottom: 60px;
+        .brands-show{
+           margin-top: 0;
+           margin-bottom: 0;
+           .phone-list{
+               margin-bottom: 0;
+           }
+           .phone-card{
+               background: #fff;
+           }
+        }
+    }
+    .pagenation{
+        margin: auto;
+        margin-top: 50px;
+        padding-bottom: 0;
+    }
+}
+
+
+
